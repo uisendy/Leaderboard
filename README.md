@@ -1,10 +1,10 @@
-# TODO-LIST
+# LEADERBOARD
 
-Creating a simple Todo List that stores list using Class and Stores in Local Storage. Handling a Complete CRUD operations. The project is fully a javaScript project with Webpack for handling the Package.
+This is a simple Leaderboard created with the use of javascript, Webpack and following good gitflow practises. This project utilized ASYNC/AWAIT function to fetch from and post to a leaderboard API. The use of API is the main objective of this javascript project.
 
 ### Live Demo
 
-Click [here](https://uisendy.github.io/Todo-List/dist/) to view the full project live.
+To be Documented Later.
 
 ## Built With
 
@@ -50,7 +50,13 @@ cd foldername
 - Clone the project repo
 
 ```bash
-https://github.com/uisendy/Todo-List
+git clone git@github.com:uisendy/Leaderboard.git
+```
+
+- run <npm install>
+
+```bash
+npm install
 ```
 
 #### Linter
@@ -60,6 +66,7 @@ https://github.com/uisendy/Todo-List
 
 ```bash
 npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
 ```
 
 - Linter (Stylelint) is installed.
