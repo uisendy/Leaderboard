@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  list-style: none;
+}
+
+body {
+  background-color:hsla(212,76%,11%,1);
+  background-image:
+  radial-gradient(at 94% 0%, hsla(231,100%,19%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 0%, hsla(194,94%,78%,0.24) 0px, transparent 50%),
+  radial-gradient(at 41% 75%, hsla(240,77%,14%,1) 0px, transparent 50%),
+  radial-gradient(at 92% 79%, hsla(225,95%,17%,1) 0px, transparent 50%),
+  radial-gradient(at 63% 88%, hsla(227,67%,9%,0.9) 0px, transparent 50%),
+  radial-gradient(at 100% 0%, hsla(76,61%,65%,1) 0px, transparent 50%);
+}
+
+.header{
+  width: 87%;
+  margin: 0 auto;
+  padding-block: 40px;
+}
+
+.heading{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: beige;
+}
+
+h2{
+  color: beige;
+}
+
+.main{
+  width: 87%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 15%;
+}
+
+.board-sec{
+  overflow-x: auto;
+  position: relative;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  border-radius: 0.5rem;
+  padding: 2.5rem 2.5rem;
+  backdrop-filter: blur(10px) saturate(159%);
+  -webkit-backdrop-filter: blur(10px) saturate(159%);
+  background-color: rgba(113, 113, 113, 0.41);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  color: whitesmoke;
+}
+
+.table{
+  width:100%;
+  text-align: left;
+  font-size: 1rem;
+ 
+}
+
+.thead{
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.thead-row{
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  width: 400px;
+}
+
+.th-row{
+  padding: 0.7rem 3rem;
+  width: 70%
+}
+
+.tbody-row{
+  color: white;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.td-row {
+  padding: 1rem 5rem 1rem 2rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.tbody-row:hover{
+  background-color: #FCD34D;
+  border: 1px solid black;
+  color: black;
+}
+
+
+
+.form-container{
+  padding: 4rem 2.5rem;
+  backdrop-filter: blur(10px) saturate(159%);
+  -webkit-backdrop-filter: blur(10px) saturate(159%);
+  background-color: rgba(113, 113, 113, 0.41);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
