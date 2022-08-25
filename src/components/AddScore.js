@@ -1,5 +1,5 @@
 const AddScore = () => {
-  const addScoreContainer = document.createElement("div");
+  const addScoreContainer = document.createElement('div');
   addScoreContainer.innerHTML = `
   <div class="form-container w-[80%]">
     <h2 class="Form-header text-3xl pb-10">Add your Score</h2>

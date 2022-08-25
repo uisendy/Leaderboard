@@ -1,5 +1,5 @@
 const Footer = () => {
-  const footer = document.createElement("footer");
+  const footer = document.createElement('footer');
   footer.innerHTML = `<div class="bg-yellow-400 mt-16">
   <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
     <div class="sm:flex sm:items-center sm:justify-between">
