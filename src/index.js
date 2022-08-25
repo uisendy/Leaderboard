@@ -7,3 +7,4 @@ console.log(MainBody());
 
 document.body.appendChild(PageTitle());
 document.body.appendChild(MainBody());
+document.body.appendChild(Footer());
