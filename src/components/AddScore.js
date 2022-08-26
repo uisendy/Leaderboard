@@ -1,5 +1,5 @@
 const AddScore = () => {
-  const addScoreContainer = document.createElement("div");
+  const addScoreContainer = document.createElement('div');
   addScoreContainer.innerHTML = `
   <div class="form-container hidden lg:block">
     <div class = "form-area">

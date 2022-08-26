@@ -43,7 +43,7 @@ h2 {
 .main-container {
   width: 87%;
   margin: 0 auto;
-  display: block
+  display: block;
 }
 
 .board-sec {
@@ -106,11 +106,10 @@ h2 {
   border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
-.form-container.active{
+.form-container.active {
   position: fixed;
   top: 0;
   left: 0;
-  display: block;
   width: 100%;
   height: 80vh;
   display: flex;
@@ -118,13 +117,12 @@ h2 {
   justify-content: center;
 }
 
-.form-container.active > .form-area{
+.form-container.active > .form-area {
   width: 70%;
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 1024px) {
-
   .main-container {
     display: grid;
     grid-template-columns: 3.5fr 2fr;
@@ -135,7 +133,7 @@ h2 {
     overflow-x: auto;
     padding: 2rem 2.5rem;
   }
-  
+
   .table {
     width: 100%;
   }
