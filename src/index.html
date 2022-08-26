@@ -3,9 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Leaderboard</title>
   </head>
-  <body>
-    <header class="header"><h1 class="heading">Leaderboard</h1></header>
+  <body class="active">
+    <header class="header flex justify-between py-20">
+      <h1 class="heading text-3xl text-white md:text-5xl">Leaderboard</h1>
+      <i
+        class="open-icon fa fa-plus-circle lg:hidden fixed z-50 left-[80%] text-4xl text-yellow-400"
+      ></i>
+      <i
+        class="close-icon fa fa-times-circle lg:hidden fixed z-50 left-[80%] text-4xl text-yellow-400"
+      ></i>
+    </header>
   </body>
 </html>

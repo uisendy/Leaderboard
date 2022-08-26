@@ -1,8 +1,9 @@
 const AddScore = () => {
-  const addScoreContainer = document.createElement('div');
+  const addScoreContainer = document.createElement("div");
   addScoreContainer.innerHTML = `
-  <div class="form-container w-[80%]">
-    <h2 class="Form-header text-3xl pb-10">Add your Score</h2>
+  <div class="form-container hidden lg:block">
+    <div class = "form-area">
+    <h2 class="Form-header text-xl pb-10">Add your Score</h2>
     <form>
       <div class="name-input-area relative z-0 mb-6 w-full group">
         <input
@@ -48,6 +49,7 @@ const AddScore = () => {
         </span>
       </button>
     </form>
+    </div>
   </div>`;
   return addScoreContainer;
 };
