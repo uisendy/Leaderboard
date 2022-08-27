@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: hsla(212, 76%, 11%, 1);
+  background-image:
+    radial-gradient(at 94% 0%, hsla(231, 100%, 19%, 1) 0, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(194, 94%, 78%, 0.24) 0, transparent 50%),
+    radial-gradient(at 41% 75%, hsla(240, 77%, 14%, 1) 0, transparent 50%),
+    radial-gradient(at 92% 79%, hsla(225, 95%, 17%, 1) 0, transparent 50%),
+    radial-gradient(at 63% 88%, hsla(227, 67%, 9%, 0.9) 0, transparent 50%),
+    radial-gradient(at 100% 0%, hsla(76, 61%, 65%, 1) 0, transparent 50%);
+}
+
+.header {
+  width: 87%;
+  margin: 0 auto;
+}
+
+h2 {
+  color: beige;
+}
+
+.main-container {
+  width: 87%;
+  margin: 0 auto;
+  display: block;
+}
+
+.board-sec {
+  overflow-x: hidden;
+  position: relative;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  padding: 1rem 0;
+  backdrop-filter: blur(10px) saturate(159%);
+  -webkit-backdrop-filter: blur(10px) saturate(159%);
+  background-color: rgba(113, 113, 113, 0.41);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  color: whitesmoke;
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.thead {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.thead-row {
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+  width: 400px;
+}
+
+.th-row {
+  padding: 0.7rem 3rem;
+  width: 70%;
+}
+
+.tbody-row {
+  color: white;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.td-row {
+  padding: 1rem 5rem 1rem 2rem;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.tbody-row:hover {
+  background-color: #fcd34d;
+  border: 1px solid black;
+  color: black;
+}
+
+.form-container {
+  padding: 4rem 2.5rem;
+  backdrop-filter: blur(10px) saturate(159%);
+  -webkit-backdrop-filter: blur(10px) saturate(159%);
+  background-color: rgba(113, 113, 113, 0.41);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.form-container.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container.active > .form-area {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 3.5fr 2fr;
+    column-gap: 15%;
+  }
+
+  .board-sec {
+    overflow-x: auto;
+    padding: 2rem 2.5rem;
+  }
+
+  .table {
+    width: 100%;
+  }
+}
