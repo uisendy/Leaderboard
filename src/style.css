@@ -40,6 +40,22 @@ h2 {
   color: beige;
 }
 
+.open-icon {
+  display: block;
+}
+
+.open-icon.active {
+  display: none;
+}
+
+.close-icon {
+  display: none;
+}
+
+.close-icon.active {
+  display: block;
+}
+
 .main-container {
   width: 87%;
   margin: 0 auto;
