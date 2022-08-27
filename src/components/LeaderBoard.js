@@ -1,12 +1,12 @@
 // import dataset from "../data.js";
-import APIrequest from "../ApiRequest.js";
+import APIrequest from '../ApiRequest.js';
 
 const LeaderBoard = async () => {
-  const boardSection = document.createElement("div");
-  boardSection.classList.add("board-sec");
+  const boardSection = document.createElement('div');
+  boardSection.classList.add('board-sec');
 
-  const table = document.createElement("table");
-  table.classList.add("table");
+  const table = document.createElement('table');
+  table.classList.add('table');
 
   table.innerHTML = `
   <thead class="thead">
@@ -16,22 +16,21 @@ const LeaderBoard = async () => {
     </tr>
   </thead>`;
 
-  const tbody = document.createElement("tbody");
+  const tbody = document.createElement('tbody');
 
   const dataset = await APIrequest.getScores();
-  console.log(dataset);
 
   dataset.forEach((data) => {
-    const tr = document.createElement("tr");
-    tr.className = "tbody-row";
+    const tr = document.createElement('tr');
+    tr.className = 'tbody-row';
 
-    const th = document.createElement("th");
-    th.scope = "row";
-    th.className = "th-row";
+    const th = document.createElement('th');
+    th.scope = 'row';
+    th.className = 'th-row';
     th.textContent = data.user;
 
-    const td = document.createElement("td");
-    td.className = "td-row";
+    const td = document.createElement('td');
+    td.className = 'td-row';
     td.textContent = data.score;
 
     tr.appendChild(th);
