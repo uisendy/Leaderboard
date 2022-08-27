@@ -29,4 +29,19 @@ window.addEventListener('load', async () => {
   refreshBtn.addEventListener('click', async () => {
     await APIrequest.getScores();
   });
+
+  const formContainer = document.querySelector('.form-container');
+  const openIcon = document.querySelector('.open-icon');
+  const closeIcon = document.querySelector('.close-icon');
+  openIcon.addEventListener('click', () => {
+    formContainer.classList.add('active');
+    openIcon.classList.add('active');
+    closeIcon.classList.add('active');
+  });
+
+  closeIcon.addEventListener('click', () => {
+    formContainer.classList.remove('active');
+    closeIcon.classList.remove('active');
+    openIcon.classList.remove('active');
+  });
 });
