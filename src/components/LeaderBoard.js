@@ -1,6 +1,7 @@
-import dataset from '../data.js';
+// import dataset from "../data.js";
+import APIrequest from '../ApiRequest.js';
 
-const LeaderBoard = () => {
+const LeaderBoard = async () => {
   const boardSection = document.createElement('div');
   boardSection.classList.add('board-sec');
 
@@ -17,6 +18,8 @@ const LeaderBoard = () => {
 
   const tbody = document.createElement('tbody');
 
+  const dataset = await APIrequest.getScores();
+
   dataset.forEach((data) => {
     const tr = document.createElement('tr');
     tr.className = 'tbody-row';
@@ -24,7 +27,7 @@ const LeaderBoard = () => {
     const th = document.createElement('th');
     th.scope = 'row';
     th.className = 'th-row';
-    th.textContent = data.name;
+    th.textContent = data.user;
 
     const td = document.createElement('td');
     td.className = 'td-row';

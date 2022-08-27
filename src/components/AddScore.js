@@ -4,7 +4,7 @@ const AddScore = () => {
   <div class="form-container hidden lg:block">
     <div class = "form-area">
     <h2 class="Form-header text-xl pb-10">Add your Score</h2>
-    <form>
+    <form class = "form">
       <div class="name-input-area relative z-0 mb-6 w-full group">
         <input
           type="text"
