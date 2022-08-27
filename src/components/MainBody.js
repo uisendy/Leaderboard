@@ -1,12 +1,12 @@
-import LeaderBoard from "./LeaderBoard.js";
-import AddScore from "./AddScore.js";
+import LeaderBoard from './LeaderBoard.js';
+import AddScore from './AddScore.js';
 
 const MainBody = async () => {
-  const main = document.createElement("main");
-  main.className = "main";
+  const main = document.createElement('main');
+  main.className = 'main';
 
-  const mainHead = document.createElement("div");
-  mainHead.className = "main-head";
+  const mainHead = document.createElement('div');
+  mainHead.className = 'main-head';
   mainHead.innerHTML = `
   <div class = "recent-score pb-10 flex justify-between lg:w-[40%] mx-[6.5%]"> 
     <h2 class = " text-xl md:text-4xl" > Recent Score </h2>
@@ -26,8 +26,8 @@ const MainBody = async () => {
   
   `;
 
-  const container = document.createElement("div");
-  container.className = "main-container";
+  const container = document.createElement('div');
+  container.className = 'main-container';
 
   container.appendChild(await LeaderBoard());
   container.appendChild(AddScore());
